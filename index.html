@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AffiCart – Top Deals on Amazon</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/afficart_favicon.png" />
+</head>
+<body>
+  <header class="amazon-header">
+    <div class="top-bar">
+      <img src="assets/images/afficart_logo_transparent.png" alt="AffiCart Logo" class="logo" />
+
+      <div class="search-section">
+        <select id="categorySelect">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="beauty">Beauty</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <button onclick="searchProducts()">🔍</button>
+      </div>
+    </div>
+
+    <nav class="category-nav">
+      <button onclick="filterCategory('all')">All</button>
+      <button onclick="filterCategory('electronics')">Electronics</button>
+      <button onclick="filterCategory('clothing')">Clothing</button>
+      <button onclick="filterCategory('beauty')">Beauty</button>
+    </nav>
+  </header>
+
+  <main class="product-grid" id="productGrid">
+    <!-- Product Cards with data-category -->
+    <div class="product-card" data-title="Plix Night Cream" data-category="beauty" onclick="openProduct('https://www.amazon.in/dp/B0C8V9DZJ1')">
+      <img src="assets/images/shirt1.jpg" alt="Plix Night Cream" />
+      <div class="card-content">
+        <h2>Plix Night Cream</h2>
+        <p class="price">₹399</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-title="Cotton Block Printed Kurta" data-category="clothing" onclick="openProduct('https://www.amazon.in/dp/B0BY8ZV4FD')">
+      <img src="assets/images/Women_Cotton_Block.jpg" alt="Cotton Kurta" />
+      <div class="card-content">
+        <h2>Nermosa Women Cotton Block Printed Kurta Pant With Dupatta</h2>
+        <p class="price">₹599</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-title="Pinkmint Men's Solid" data-category="clothing" onclick="openProduct('https://www.amazon.in/dp/B0C7C3F9PD')">
+      <img src="assets/images/Pinkmint Men's.jpg" alt="Pinkmint Shirt" />
+      <div class="card-content">
+        <h2>Pinkmint Men's Solid Regular Fit Shirt</h2>
+        <p class="price">₹10,499</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-title="Samsung LED TV" data-category="electronics" onclick="openProduct('https://www.amazon.in/dp/B09YV5GTDQ')">
+      <img src="assets/images/samsung_tv.jpg" alt="Samsung TV" />
+      <div class="card-content">
+        <h2>Samsung 32-inch Wondertainment Series HD Ready LED Smart TV</h2>
+        <p class="price">₹12,999</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
