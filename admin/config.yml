@@ -2,18 +2,17 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "products"
-    label: "Product Cards"
+    label: "Products"
     folder: "products"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Product Name", name: "title", widget: "string" }
-      - { label: "Amazon Link", name: "link", widget: "string" }
-      - { label: "Price", name: "price", widget: "string" }
-      - { label: "Product Image", name: "image", widget: "image" }
-      - { label: "Category", name: "category", widget: "select", options: ["electronics", "clothing", "home", "other"] }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "price", label: "Price", widget: "string" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "link", label: "Amazon Link", widget: "string" }
