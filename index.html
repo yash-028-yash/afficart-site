@@ -18,6 +18,7 @@
           <option value="electronics">Electronics</option>
           <option value="clothing">Clothing</option>
           <option value="beauty">Beauty</option>
+          <option value="books">Books</option>
         </select>
         <input type="text" id="searchInput" placeholder="Search products..." />
         <button onclick="searchProducts()">🔍</button>
@@ -29,6 +30,7 @@
       <button onclick="filterCategory('electronics')">Electronics</button>
       <button onclick="filterCategory('clothing')">Clothing</button>
       <button onclick="filterCategory('beauty')">Beauty</button>
+      <button onclick="filterCategory('books')">Books</button>
     </nav>
   </header>
 
@@ -62,13 +64,43 @@
     </div>
 
     <div class="product-card" data-title="Samsung LED TV" data-category="electronics" onclick="openProduct('https://www.amazon.in/dp/B09YV5GTDQ')">
-      <img src="assets/images/samsung_tv.jpg" alt="Samsung TV" />
+      <img src="assets/images/samsung.jpg" alt="Samsung TV" />
       <div class="card-content">
         <h2>Samsung 32-inch Wondertainment Series HD Ready LED Smart TV</h2>
         <p class="price">₹12,999</p>
         <button>Buy on Amazon</button>
       </div>
     </div>
+
+    <div class="product-card" data-title="realme Buds Wireless 3 Neo" data-category="electronics" onclick="openProduct('https://amzn.to/3UdHiGB')">
+      <img src="https://m.media-amazon.com/images/I/61kLtJJl+tL._SX679_.jpg" alt="Samsung TV" />
+      <div class="card-content">
+        <h2>realme Buds Wireless 3 Neo</h2>
+        <p class="price">₹1,099</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-title="Read People Like a Book" data-category="books" onclick="openProduct('https://amzn.to/44z6BJr')">
+      <img src="https://m.media-amazon.com/images/I/71-jZgbnPrL._SY466_.jpg" alt="Samsung TV" />
+      <div class="card-content">
+        <h2>Read People Like a Book</h2>
+        <p class="price">₹283</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-title="SkinInspired Retinol Night Cream For Wrinkles & Anti-Aging" data-category="beauty" onclick="openProduct('https://amzn.to/4eUaHiT')">
+      <img src="https://m.media-amazon.com/images/I/41YNeaUzDNL._SX679_.jpg" alt="Samsung TV" />
+      <div class="card-content">
+        <h2>SkinInspired Retinol Night Cream For Wrinkles & Anti-Aging</h2>
+        <p class="price">₹1,099</p>
+        <button>Buy on Amazon</button>
+      </div>
+    </div>
+
+
+
   </main>
 
   <script src="scripts/main.js"></script>
